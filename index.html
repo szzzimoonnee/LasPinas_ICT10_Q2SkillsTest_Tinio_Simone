@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Finder</title>
+     <link rel="stylesheet"
+    href="https://pyscript.net/releases/2024.11.1/core.css" />
+
+    <script type="module"
+    src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8eeee;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            background-color: white;
+            max-width: 550px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #800000;
+        }
+
+        h1 {
+            text-align: center;
+            color: #800000;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .instructions {
+            background-color: #f5e1e1;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #800000;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            border: 1px solid #800000;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #800000;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #5c0000;
+        }
+
+        #result {
+            background-color: #f5e1e1;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #800000;
+            font-size: 12px;
+        }
+    </style>
+
+</head>
+<body>
+   <div class="container">
+
+    <h1>Non-Metal Elements</h1>
+
+    <p style="text-align:center;">
+        Periodic Table Information Finder
+    </p>
+
+    <div class="instructions">
+        <b>Instructions:</b>
+        <p>Enter the symbol of a non-metal element below
+        to find its information.</p>
+      
+    </div>
+
+    <label>Element Symbol:</label>
+
+    <input type="text" id="symbol"
+    placeholder="Enter element symbol (e.g. H, O, Rn)">
+
+    <button py-click="search_element">
+        Check Details
+    </button>
+
+    <h3 style="color:#800000;">Result:</h3>
+
+    <div id="result">
+        Element information will appear here.
+    </div>
+
+    <footer>
+        ICT 10 | 2nd Quarter Skills Test
+    </footer>
+
+</div>
+
+<py-script src="main.py"></py-script>
+ 
+</body>
+</html>
