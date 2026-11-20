@@ -18,7 +18,7 @@ non_metals = {
     "Kr": ("Krypton", 36, 83.798),
     "I": ("Iodine", 53, 126.90),
     "Xe": ("Xenon", 54, 131.29),
-    "Rn": ("Radon", 86, "*")
+    "Rn": ("Radon", 86, 222)
 }
 
 
